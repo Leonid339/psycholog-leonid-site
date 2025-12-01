@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Трансформація страхів за допомогою інтегративного методу психології, гіпно-коучингу та енергетичної корекції. Експертиза та результати">
+    <title>Леонід Поміркований — Психолог | Звільнення від страхів</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-cream: #F8F7F3;
+            --color-white: #FFFBF5;
+            --color-teal: #208A9E;
+            --color-teal-light: #B3E5E8;
+            --color-teal-dark: #1F8A9A;
+            --color-gold: #D4A574;
+            --color-dark: #1F3547;
+            --color-text: #243248;
+            --color-text-light: #628074;
+            --color-indigo: #2C3E5F;
+            --shadow-sm: 0 5px 15px rgba(0,0,0,0.1);
+            --shadow-md: 0 10px 30px rgba(0,0,0,0.15);
+            --shadow-lg: 0 20px 50px rgba(0,0,0,0.2);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background: var(--color-white);
+        }
+
+        /* HEADER / NAVIGATION */
+        header {
+            background: linear-gradient(135deg, var(--color-cream) 0%, #E8DCC8 100%);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--color-dark);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--color-text);
+            text-decoration: none;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-teal);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, var(--color-cream) 0%, #E8DCC8 100%);
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--color-dark);
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin-bottom: 30px;
+        }
+
+        .hero-image {
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--color-teal);
+            color: var(--color-white);
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: var(--color-teal-dark);
+            box-shadow: 0 10px 25px rgba(32, 138, 158, 0.3);
+            transform: translateY(-2px);
+        }
+
+        /* SECTION STYLES */
+        section {
+            padding: 80px 0;
+        }
+
+        section h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--color-dark);
+        }
+
+        section.dark {
+            background: linear-gradient(135deg, var(--color-indigo) 0%, var(--color-dark) 100%);
+            color: var(--color-white);
+        }
+
+        section.dark h2 {
+            color: var(--color-white);
+        }
+
+        section.light-teal {
+            background: rgba(179, 229, 232, 0.15);
+        }
+
+        /* FEARS SECTION */
+        .fears-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .fear-card {
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s;
+        }
+
+        .fear-card:hover {
+            box-shadow: var(--shadow-md);
+            transform: translateY(-5px);
+        }
+
+        .fear-card h3 {
+            font-size: 24px;
+            color: var(--color-teal);
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .fear-card strong {
+            color: var(--color-dark);
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .fear-card ul {
+            list-style: none;
+            margin: 15px 0;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .fear-card ul li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .fear-card ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--color-teal);
+            font-weight: bold;
+        }
+
+        /* ABOUT SECTION */
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .about-content h3 {
+            font-size: 24px;
+            color: var(--color-teal);
+            margin: 30px 0 15px 0;
+            font-weight: 700;
+        }
+
+        .about-content p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .about-content ul {
+            list-style: none;
+            margin: 20px 0;
+            font-size: 15px;
+        }
+
+        .about-content ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .about-content ul li:before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: var(--color-teal);
+            font-size: 24px;
+            line-height: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: var(--shadow-md);
+        }
+
+        /* PACKAGES SECTION */
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .package-card {
+            padding: 40px;
+            border-radius: 12px;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .package-card.basic {
+            background: var(--color-white);
+            border: 2px solid var(--color-teal-light);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .package-card.popular {
+            background: var(--color-gold);
+            border: 3px solid var(--color-teal);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            top: -10px;
+        }
+
+        .package-card.vip {
+            background: var(--color-dark);
+            color: var(--color-white);
+            border: 3px solid var(--color-gold);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .package-badge {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(32, 138, 158, 0.1);
+            color: var(--color-teal);
+        }
+
+        .package-card.popular .package-badge {
+            background: rgba(31, 53, 71, 0.2);
+            color: var(--color-dark);
+        }
+
+        .package-card.vip .package-badge {
+            background: rgba(212, 165, 116, 0.3);
+            color: var(--color-gold);
+        }
+
+        .package-card h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 15px 0 20px 0;
+        }
+
+        .package-card .price {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--color-teal);
+            margin-bottom: 10px;
+        }
+
+        .package-card.popular .price {
+            color: var(--color-dark);
+        }
+
+        .package-card.vip .price {
+            color: var(--color-gold);
+        }
+
+        .package-info {
+            font-size: 13px;
+            margin-bottom: 30px;
+            opacity: 0.8;
+        }
+
+        .package-card ul {
+            list-style: none;
+            margin: 25px 0;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .package-card ul li {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .package-card ul li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--color-teal);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .package-card.vip ul li:before {
+            color: var(--color-gold);
+        }
+
+        .guarantee {
+            background: rgba(32, 138, 158, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-teal);
+            text-align: center;
+        }
+
+        .package-card.vip .guarantee {
+            background: rgba(212, 165, 116, 0.2);
+            color: var(--color-gold);
+        }
+
+        .package-slots {
+            font-size: 12px;
+            opacity: 0.7;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: var(--color-white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow-sm);
+            border-left: 4px solid var(--color-teal);
+        }
+
+        .testimonial-card p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .testimonial-result {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--color-teal);
+            padding-top: 15px;
+            border-top: 1px solid #E0E0E0;
+        }
+
+        /* TABLE */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: var(--color-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+
+        table th {
+            background: var(--color-teal);
+            color: var(--color-white);
+            padding: 16px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        table td {
+            padding: 16px;
+            border-bottom: 1px solid #E0E0E0;
+            font-size: 14px;
+        }
+
+        table tr:last-child td {
+            border-bottom: none;
+        }
+
+        table tr:hover {
+            background: #F5F9FA;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--color-dark);
+            color: var(--color-white);
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin-bottom: 15px;
+        }
+
+        footer a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: var(--color-teal-light);
+        }
+
+        /* TEXT STYLES */
+        .highlight {
+            color: var(--color-teal);
+            font-weight: 600;
+        }
+
+        .section-divider {
+            text-align: center;
+            margin: 50px 0;
+            color: var(--color-text-light);
+            font-size: 20px;
+        }
+
+        .intro-text {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            color: var(--color-text);
+        }
+
+        .intro-text strong {
+            color: var(--color-dark);
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .hero .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            section h2 {
+                font-size: 28px;
+            }
+
+            .package-card.popular {
+                top: 0;
+            }
+
+            .cta-button {
+                display: block;
+                text-align: center;
+                width: 100%;
+            }
+
+            table {
+                font-size: 12px;
+            }
+
+            table th, table td {
+                padding: 12px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo">Леонід Поміркований</a>
+            <ul class="nav-links">
+                <li><a href="#fears">Страхи</a></li>
+                <li><a href="#about">Про мене</a></li>
+                <li><a href="#packages">Програми</a></li>
+                <li><a href="#testimonials">Відгуки</a></li>
+                <li><a href="#contact">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Боїтесь літати, виступати на сцені чи опинитися в замкненому просторі?</h1>
+            <p><strong>Ці страхи можна усунути за короткий час</strong></p>
+            <p style="margin-bottom: 40px;">Вони стискають тіло, обмежують думки і впливають на ключові сфери життя. Але відновивши контроль, ви зможете досягати своїх цілей швидко і без обмежень.</p>
+            <a href="https://forms.gle/CMp4JHN6qXDT2a8Y7" class="cta-button" target="_blank">➡ Запишіться на консультацію</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/ce804170-182e-40ed-9755-f5523b5720f6" alt="Леонід Поміркований — Психолог">
+        </div>
+    </div>
+</section>
+
+<!-- INTRO SECTION -->
+<section>
+    <div class="container">
+        <p class="intro-text"><strong>Я працюю не з симптомом, а з причиною.</strong></p>
+        <p class="intro-text">Мій підхід забезпечує стійкі результати, помітні вже після перших сесій.</p>
+
+        <div class="section-divider">____</div>
+
+        <h2 style="text-align: center; margin-bottom: 40px;">Усвідомлення проблеми</h2>
+
+        <h2 style="text-align: center; font-size: 28px; color: var(--color-teal); margin-bottom: 50px;">СТРАХИ, ЯКІ БЛОКУЮТЬ ВАС — І ЯК Я ДОПОМАГАЮ ЇХ ТРАНСФОРМУВАТИ</h2>
+
+        <p class="intro-text">Більшість емоційних реакцій, є старими програмами.<br>
+        Формуються в дитинстві, але й досі запускають автоматичні реакції.<br>
+        Ці програми потрібно змінити.</p>
+    </div>
+</section>
+
+<!-- FEARS SECTION -->
+<section class="light-teal" id="fears">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">Три основні страхи, які я допомагаю трансформувати</h2>
+
+        <div class="fears-grid">
+            <!-- Fear 1 -->
+            <div class="fear-card">
+                <h3>Страх публічних виступів (Глософобія)</h3>
+
+                <strong>Як проявляється</strong>
+                <p>Паралізуючий страх осуду, критики, сорому чи провалу.</p>
+                <ul>
+                    <li>Я виглядаю недостатньо добре</li>
+                    <li>Мене не почують</li>
+                    <li>У мене немає права говорити</li>
+                </ul>
+
+                <strong>Період формування</strong>
+                <p>Переважно у 3–12 років: насмішки, критика, невдалий виступ, установки «не висовуйся», «говори тихо». Пізніше страх посилюється потребою бути прийнятим.</p>
+
+                <strong>Що змінюється</strong>
+                <p>Зникає внутрішній блок, з'являється рівність, спокій, впевненість. Виступ стає звичною та комфортною ситуацією.</p>
+            </div>
+
+            <!-- Fear 2 -->
+            <div class="fear-card">
+                <h3>Страх польотів (Аерофобія)</h3>
+
+                <strong>Як проявляється</strong>
+                <ul>
+                    <li>паніка, напруга в тілі</li>
+                    <li>ризик уникати подорожей</li>
+                    <li>відчуття втрати контролю, небезпеки</li>
+                </ul>
+
+                <strong>Коли формується</strong>
+                <p>Коріння — у ранніх переживаннях (0–15 років): безсилля, загрози, тривожність у сімʼї.<br>
+                Може бути «успадкованим» від батьків.</p>
+
+                <strong>Що змінюється</strong>
+                <p>Польоти стають нейтральною ситуацією без тілесної тривоги.<br>
+                З'являється стійке відчуття безпеки та внутрішньої опори.</p>
+            </div>
+
+            <!-- Fear 3 -->
+            <div class="fear-card">
+                <h3>Страх замкнутого простору</h3>
+
+                <strong>Як проявляється</strong>
+                <ul>
+                    <li>тиску, задухи, неможливості вийти</li>
+                    <li>тривога в ліфтах, тунелях, маленьких приміщеннях</li>
+                </ul>
+
+                <strong>Коли формується</strong>
+                <p>дуже рано — у 0–6 років: обмеження руху, покинутость, досвід «загнаності в кут».</p>
+
+                <strong>Що змінюється</strong>
+                <p>Тіло перестає реагувати загрозою.<br>
+                Повертається спокійне дихання та відчуття свободи в будь-якому просторі.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONSEQUENCES SECTION -->
+<section>
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">Наслідки бездіяльності</h2>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="border-left: 4px solid var(--color-gold); padding-left: 30px; margin: 30px 0;">
+                <p style="font-size: 18px; line-height: 1.8; margin-bottom: 20px;"><strong>Кожен день, коли страх керує вашим життям, ви втрачаєте:</strong></p>
+                <ul style="list-style: none; font-size: 16px; line-height: 1.8;">
+                    <li style="margin-bottom: 15px;"><strong>Можливості</strong> — відмовляєтесь від роботи, подорожей, виступів</li>
+                    <li style="margin-bottom: 15px;"><strong>Зв'язки</strong> — уникаєте ситуацій, де можна познайомитись з цікавими людьми</li>
+                    <li style="margin-bottom: 15px;"><strong>Впевненість</strong> — кожна відмова підсилює відчуття безсилля</li>
+                    <li style="margin-bottom: 15px;"><strong>Час</strong> — роки проходять у боротьбі з тим, що можна змінити за короткий термін</li>
+                </ul>
+            </div>
+
+            <p style="font-size: 18px; margin-top: 40px; text-align: center;">Але це не вирок. Це виклик, який можна прийняти прямо зараз.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="dark" id="about">
+    <div class="container">
+        <h2>Про мене</h2>
+
+        <div class="about-content" style="margin-top: 50px;">
+            <div>
+                <h3>Леонід Поміркований</h3>
+                <p style="color: var(--color-teal-light); margin-bottom: 20px;">Дипломований психолог. Клінічний психолог. Практик глибинної енергопсихології.</p>
+
+                <p>Я працюю там, де стандартні методи перестають давати результат.</p>
+
+                <h3 style="margin-top: 30px;">Моя спеціалізація:</h3>
+                <ul>
+                    <li>Страх публічних виступів</li>
+                    <li>Страх польотів</li>
+                    <li>Страх замкнутих просторів</li>
+                    <li>Страх втрати контролю</li>
+                    <li>Автоматичні тілесні реакції, які здаються невпинними</li>
+                </ul>
+
+                <p style="margin-top: 20px;">Мої клієнти приходять не за розмовою, а за реальним звільненням від автоматичних реакцій.</p>
+
+                <h3 style="margin-top: 30px;">У чому я допомагаю</h3>
+                <p><strong>Мій підхід — глибока робота з тілом, психікою та підсвідомістю одночасно.</strong></p>
+
+                <p style="margin-top: 15px;"><strong>Інтеграція трьох напрямків:</strong></p>
+                <ul>
+                    <li>Психологія (клінічна, глибинна, тілесно-орієнтована)</li>
+                    <li>Гіпно-коучинг (переписування підсвідомих реакцій)</li>
+                    <li>Енергетична корекція (звільнення глибинних блоків)</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Що це дає:</strong></p>
+                <ul>
+                    <li>Переписує автоматичні реакції тіла в реальному часі</li>
+                    <li>Заспокоює нервову систему без перевантаження</li>
+                    <li>Прибирає страх із емоційної пам'яті</li>
+                    <li>Повертає внутрішню опору та контроль</li>
+                    <li>Стабільний спокій там, де раніше була паніка</li>
+                </ul>
+
+                <h3 style="margin-top: 30px;">Формат роботи:</h3>
+                <ul>
+                    <li>Сесії 90–120 хв (еквівалент 2–3 стандартних по 45 хв)</li>
+                    <li>При потребі — серія 2–3 сесій поспіль для глибинної інтеграції</li>
+                    <li>Видимий результат вже з перших зустрічей</li>
+                </ul>
+
+                <h3 style="margin-top: 30px;">Мій власний метод</h3>
+                <p>Я створив метод, який працює там, де класичні підходи зупиняються.</p>
+
+                <p style="margin-top: 15px;"><strong>Проблема стандартних методів:</strong></p>
+                <ul>
+                    <li>Дає розуміння причини страху</li>
+                    <li>Не вимикає тілесний рефлекс паніки</li>
+                </ul>
+
+                <p style="margin-top: 15px;"><strong>Мій підхід:</strong></p>
+                <p>Психологія → Гіпно-коучинг → Енергетична корекція</p>
+
+                <p style="margin-top: 15px;"><strong>Результати методу:</strong></p>
+                <ul>
+                    <li>Змінює автоматичні реакції тіла</li>
+                    <li>Переписує підсвідомі програми</li>
+                    <li>Розпускає глибинні блоки, що утримували страх</li>
+                    <li>Повертає стабільність, ясність і внутрішню силу</li>
+                </ul>
+
+                <p style="margin-top: 20px;">Моя робота — точна, структурована та глибока взаємодія, яка приносить відчутні зміни вже з перших сесій.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/53441ac6-0edb-4d4f-a2f7-e891f1fcc891" alt="Леонід Поміркований">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PACKAGES SECTION -->
+<section id="packages">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">ПРОГРАМИ ГЛИБИННОЇ ТРАНСФОРМАЦІЇ СТРАХІВ</h2>
+        <p style="text-align: center; font-size: 18px; margin-bottom: 50px; color: var(--color-text);"><strong>Інвестуйте у реальні зміни, а не в години.</strong></p>
+
+        <div class="packages-grid">
+            <!-- Package 1 -->
+            <div class="package-card basic">
+                <div class="package-badge">ПАКЕТ 1</div>
+                <h3>Подолати внутрішні блоки</h3>
+                <p class="package-info">3 сесії — 3 тижні — 90–120 хв</p>
+                <p class="price">$150</p>
+                <p style="font-size: 13px; margin-bottom: 20px;">(еквівалент 6–9 стандартних сесій у звичайного психолога)</p>
+
+                <strong>Що входить:</strong>
+                <ul>
+                    <li>Глибинна психологія: клінічна, когнітивна, тілесно-орієнтована</li>
+                    <li>Виявлення глибинних причин страхів і тривоги</li>
+                    <li>Зняття тілесних затисків</li>
+                    <li>Формування внутрішньої опори</li>
+                    <li>Нові стратегії поведінки</li>
+                    <li>Навчання тіла реагувати спокійно там, де раніше був страх</li>
+                </ul>
+
+                <strong style="display: block; margin-top: 20px;">Для кого:</strong>
+                <p style="font-size: 14px;">Для тих, хто хоче м'яко почати і отримати перші стабільні зміни в тілі та психіці.</p>
+
+                <strong style="display: block; margin-top: 20px;">Результат:</strong>
+                <ul>
+                    <li>Зниження тривожності на 40–60%</li>
+                    <li>Спокій і стабільність у тілі</li>
+                    <li>Внутрішня опора</li>
+                    <li>Перші зміни у відносинах та поведінці</li>
+                </ul>
+
+                <a href="https://forms.gle/CMp4JHN6qXDT2a8Y7" class="cta-button" style="display: block; text-align: center; margin-top: 25px;" target="_blank">➡️ Забронювати</a>
+                <p class="package-slots">(5 слотів/місяць)</p>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package-card popular">
+                <div class="package-badge">ПАКЕТ 2 • РЕКОМЕНДОВАНИЙ</div>
+                <h3>Вільне проявлення та ресурсний стан</h3>
+                <p class="package-info">6 сесій — 4–6 тижнів — 90–120 хв</p>
+                <p class="price">$600</p>
+                <p style="font-size: 13px; margin-bottom: 20px;">(еквівалент 12–18 стандартних сесій)</p>
+                <p style="font-size: 13px; margin-bottom: 20px;">1–2 сесії/тиждень. Можливі інтенсиви 2–3 поспіль.</p>
+
+                <strong>Що входить:</strong>
+                <ul>
+                    <li>Психологія + гіпно-коучинг + глибинна енергопсихологія</li>
+                    <li>Все з Пакету 1 +</li>
+                    <li>Глибока робота зі страхами (польоти, висота, виступи тощо)</li>
+                    <li>Очищення нервової системи</li>
+                    <li>Перепрограмування підсвідомих установок</li>
+                    <li>Трансформація минулих стресів</li>
+                    <li>Нова модель поведінки «перед → під час → після»</li>
+                    <li>Моделювання майбутніх подій</li>
+                </ul>
+
+                <strong style="display: block; margin-top: 20px;">Для кого:</strong>
+                <p style="font-size: 14px;">Для тих, хто хоче реальних глибинних змін і свободи в будь-яких ситуаціях.</p>
+
+                <strong style="display: block; margin-top: 20px;">Результат:</strong>
+                <ul>
+                    <li>Тіло більше не запускає страх</li>
+                    <li>Підсвідомість працює на впевненість</li>
+                    <li>Дії стають легкими та приносять задоволення</li>
+                    <li>Видимі зміни у фінансах, відносинах та здоров'ї</li>
+                </ul>
+
+                <div class="guarantee">100% повернення або продовження роботи безкоштовно.</div>
+
+                <a href="https://forms.gle/CMp4JHN6qXDT2a8Y7" class="cta-button" style="display: block; text-align: center; margin-top: 25px;" target="_blank">➡ Забронювати</a>
+                <p class="package-slots">(8 слотів/місяць)</p>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card vip">
+                <div class="package-badge">ПАКЕТ 3 • VIP</div>
+                <h3>Повне супроводження та гарантований результат</h3>
+                <p class="package-info">12 сесій — 6–12 тижнів — 90–120 хв</p>
+                <p class="price">$1500</p>
+                <p style="font-size: 13px; margin-bottom: 20px;">(еквівалент 24–36 стандартних сесій)</p>
+                <p style="font-size: 13px; margin-bottom: 20px;">Індивідуальний супровід: чат, голосові консультації, підтримка у критичних моментах.</p>
+
+                <strong>Що входить:</strong>
+                <ul>
+                    <li>Повна інтеграція: психологія + гіпно-коучинг + енергетична корекція + тілесна робота + глибинне перепрограмування</li>
+                    <li>Все з Пакету 2 +</li>
+                    <li>Усунення причин страхів на рівні тіла, підсвідомості та емоційної пам'яті</li>
+                    <li>Корекція реакцій у реальному часі</li>
+                    <li>Підтримка в критичних ситуаціях (24/7)</li>
+                    <li>Перебудова нервової системи</li>
+                    <li>Автоматичний «каркас впевненості»</li>
+                    <li>Закріплення результату назавжди</li>
+                </ul>
+
+                <strong style="display: block; margin-top: 20px;">Для кого:</strong>
+                <p style="font-size: 14px;">Для тих, хто хоче повної трансформації та незворотного результату.</p>
+
+                <strong style="display: block; margin-top: 20px;">Результат:</strong>
+                <ul>
+                    <li>Страхи більше не повертаються</li>
+                    <li>Впевненість стає рисою характеру</li>
+                    <li>Оновлені реакції тіла</li>
+                    <li>Видимі зміни у фінансах, здоров'ї, відносинах</li>
+                    <li>Бонус: довічний доступ до технік + 1 місяць підтримки</li>
+                </ul>
+
+                <div class="guarantee">100% повернення або продовження роботи безкоштовно.</div>
+
+                <a href="https://forms.gle/CMp4JHN6qXDT2a8Y7" class="cta-button" style="display: block; text-align: center; margin-top: 25px;" target="_blank">➡ Забронювати</a>
+                <p class="package-slots">(3 слоти/місяць)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section style="background: #F5F9FA;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">ЧОМУ САМЕ ЦІ ПАКЕТИ</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Параметр</th>
+                    <th>Пакет 1</th>
+                    <th>Пакет 2</th>
+                    <th>Пакет 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Для кого</strong></td>
+                    <td>Новачки</td>
+                    <td>Готові до змін</td>
+                    <td>Максимальна трансформація</td>
+                </tr>
+                <tr>
+                    <td><strong>Методи</strong></td>
+                    <td>Психологія</td>
+                    <td>Психологія + гіпно-коучинг</td>
+                    <td>Повний спектр + супровід</td>
+                </tr>
+                <tr>
+                    <td><strong>Результат</strong></td>
+                    <td>Перші зміни</td>
+                    <td>Глибокі зміни</td>
+                    <td>Гарантовані незворотні зміни</td>
+                </tr>
+                <tr>
+                    <td><strong>Супровід</strong></td>
+                    <td>—</td>
+                    <td>Чат</td>
+                    <td>24/7 + 1 місяц після</td>
+                </tr>
+                <tr>
+                    <td><strong>Сесії</strong></td>
+                    <td>3</td>
+                    <td>6</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><strong>Ціна</strong></td>
+                    <td>150 $</td>
+                    <td>600 $</td>
+                    <td>1500 $</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<!-- RESULTS SECTION -->
+<section class="light-teal">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">Перевірка результату</h2>
+        <p style="text-align: center; font-size: 18px; margin-bottom: 40px;"><strong>Страх більше не визначає ваше життя</strong></p>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <h3 style="color: var(--color-teal); margin-bottom: 30px;">Результат, який ви отримаєте:</h3>
+
+            <div style="background: var(--color-white); padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                <ul style="list-style: none; font-size: 16px; line-height: 1.8;">
+                    <li style="margin-bottom: 15px;">✓ Страх публічних виступів більше не керує вашими словами і діями</li>
+                    <li style="margin-bottom: 15px;">✓ Страх польотів втрачає владу над вашою безпекою та свободою руху</li>
+                    <li style="margin-bottom: 15px;">✓ Страх замкнутих просторів більше не обмежує вашу присутність і комфорт</li>
+                    <li>✓ Внутрішня стабільність і спокій стають постійними супутниками, підтримуючи вас у досягненні життєвих і професійних цілей</li>
+                </ul>
+            </div>
+
+            <h3 style="color: var(--color-teal); margin-bottom: 30px;">Як це відбувається під час сесії:</h3>
+
+            <div style="background: var(--color-white); padding: 30px; border-radius: 8px;">
+                <ul style="list-style: none; font-size: 16px; line-height: 1.8;">
+                    <li style="margin-bottom: 15px;">• Структуровано проживаємо травмуючі ситуації</li>
+                    <li style="margin-bottom: 15px;">• Створюємо в свідомості аналогічні складні сценарії, щоб пропрацювати ті ситуації, яких можливо ніколи не було, але які блокують ваш потенціал</li>
+                    <li>• Навчаємо тіло і свідомість реагувати спокійно та впевнено, навіть там, де раніше з'являлися страх і тривога</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">🌟 Зроби крок до себе</h2>
+        <h3 style="text-align: center; color: var(--color-teal); font-size: 24px; margin-bottom: 50px;">Історії клієнтів</h3>
+
+        <p style="text-align: center; font-size: 18px; margin-bottom: 50px; color: var(--color-text);">Звільнення від страху: Історії трансформації</p>
+        <p style="text-align: center; font-size: 16px; margin-bottom: 50px; color: var(--color-text);">Ці відгуки від людей, які вже перепрограмували своє життя, обравши шлях внутрішньої свободи.</p>
+
+        <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Відгук 1. Контроль та успіх у проявленні.</h4>
+                <p>"До роботи з Леонідом я постійно переживала через публічні виступи: серце колотилось, руки тряслись, і я боялася показати себе. Після перших двох сесій я вже відчувала, що тіло реагує інакше — спокійніше.</p>
+                <p>Тепер я виходжу на сцену з упевненістю, а мої презентації приносять реальні результати. Моя життя стала більш керованою і вільною."</p>
+                <p class="testimonial-result">✨ РЕЗУЛЬТАТ: Упевненість, контроль тіла та успіх у публічній діяльності.</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Відгук 2. Свобода пересування та кар'єрний зліт.</h4>
+                <p>"Я завжди боявся літати і уникав відряджень. Після курсу з Леонідом мої страхи просто розчинилися. Тіло більше не блокує, а нервова система реагує спокійно.</p>
+                <p>Я навіть отримав підвищення, бо зміг без страху вести переговори з іноземними партнерами. Це реально змінило моє життя."</p>
+                <p class="testimonial-result">✨ РЕЗУЛЬТАТ: Свобода пересування, спокій, стійкість нервової системи та кар'єрне зростання.</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Відгук 3. Влада над собою та спокій.</h4>
+                <p>"У мене були панічні атаки в замкнутих просторах — магазини, метро. Сесії з Леонідом допомогли мені переписати реакції тіла і позбутися автоматичного страху.</p>
+                <p>Тепер я можу спокійно пересуватися і насолоджуватися повсякденним життям. Я відчуваю, що знову володію собою."</p>
+                <p class="testimonial-result">✨ РЕЗУЛЬТАТ: Спокій, свобода пересування та повний контроль над тілесними реакціями.</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Відгук 4. Гармонія та підвищення продуктивності.</h4>
+                <p>"До роботи зі страхами втрати контролю я часто сривався на колег і близьких. Після курсу з Леонідом я зрозумів, що можу керувати реакціями і стресом.</p>
+                <p>Це дозволило не тільки поліпшити відносини в сім'ї, але й підвищити продуктивність на роботі. Моє життя стало більш гармонійним."</p>
+                <p class="testimonial-result">✨ РЕЗУЛЬТАТ: Ефективне управління стресом, гармонія в сім'ї та зростання робочої продуктивності.</p>
+            </div>
+
+            <!-- Testimonial 5 -->
+            <div class="testimonial-card">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Відгук 5. Упевненість та яскравість життя.</h4>
+                <p>"Я відчувала постійну тривогу через майбутні іспити та виступи. Леонід допоміг мені не просто зрозуміти свої страхи, а повністю змінити реакцію тіла на стрес.</p>
+                <p>Сьогодні я спокійно веду уроки, легко спілкуюся з людьми і відчуваю упевненість у собі. Життя стало яскравішим і спокійнішим."</p>
+                <p class="testimonial-result">✨ РЕЗУЛЬТАТ: Стійка впевненість, контроль емоцій та відчуття яскравості життя.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GUARANTEES SECTION -->
+<section style="background: linear-gradient(135deg, var(--color-cream) 0%, #E8DCC8 100%);">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 50px;">🌿 Відчуй результати всередину</h2>
+        <h3 style="text-align: center; color: var(--color-teal); font-size: 28px; margin-bottom: 50px;">Твоя свобода починається тут</h3>
+
+        <h3 style="color: var(--color-teal); margin-bottom: 30px;">Гарантії та переваги</h3>
+
+        <div style="max-width: 900px;">
+            <div style="background: var(--color-white); padding: 30px; border-radius: 8px; margin-bottom: 30px;">
+                <h4 style="color: var(--color-teal); margin-bottom: 15px;">Ти не один…</h4>
+                <p>Важливо не залишатися наодинці зі своєю проблемою, а шукати підтримку та допомогу. Я гарантую вам повну конфіденційність, індивідуальний підхід та ефективні інтегративні методи психології, які допоможуть вам досягти бажаних результатів.</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 30px;">
+                <div style="background: var(--color-white); padding: 25px; border-radius: 8px; border-left: 4px solid var(--color-teal);">
+                    <h5 style="color: var(--color-teal); margin-bottom: 15px;">Конфіденційнісь</h5>
+                    <p style="font-size: 14px;">Ваша історія та особисті переживання залишається тільки між нами.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: 25px; border-radius: 8px; border-left: 4px solid var(--color-teal);">
+                    <h5 style="color: var(--color-teal); margin-bottom: 15px;">Індивідуальний підхід</h5>
+                    <p style="font-size: 14px;">Я створюю рішення, що враховують саме ваші потреби та особливості.</p>
+                </div>
+
+                <div style="background: var(--color-white); padding: 25px; border-radius: 8px; border-left: 4px solid var(--color-teal);">
+                    <h5 style="color: var(--color-teal); margin-bottom: 15px;">Ефективність</h5>
+                    <p style="font-size: 14px;">Перевірено практикою гарантоване досягнення стійких результатів протягом трьох — чотирьох сесії.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA SECTION -->
+<section class="dark">
+    <div class="container" style="text-align: center;">
+        <h2 style="margin-bottom: 20px;">Ти можеш змінити все — почавши з одного кроку</h2>
+        <p style="font-size: 20px; margin-bottom: 40px; color: var(--color-teal-light);">Запишіться на консультацію</p>
+
+        <p style="font-size: 16px; margin-bottom: 40px;">Відчуйте силу інтегративного методу, який працює з підсвідомістю, змінює глибинні реакції тіла й усуває сам корінь страху</p>
+
+        <a href="https://forms.gle/CMp4JHN6qXDT2a8Y7" class="cta-button" style="background: var(--color-gold); color: var(--color-dark); font-size: 18px; padding: 20px 50px; margin-bottom: 40px;" target="_blank">💬 Записатися на консультацію</a>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" style="background: #F5F9FA;">
+    <div class="container" style="text-align: center;">
+        <h2 style="margin-bottom: 50px;">Контакти</h2>
+
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div style="background: var(--color-white); padding: 40px; border-radius: 12px; box-shadow: var(--shadow-sm);">
+                <p style="font-size: 16px; margin-bottom: 20px;">
+                    <strong>Телефон / WhatsApp / Telegram:</strong><br>
+                    <a href="tel:+380736409070" style="color: var(--color-teal); font-size: 18px; font-weight: 600;">+380 73 640 90 70</a>
+                </p>
+
+                <p style="font-size: 14px; color: var(--color-text-light); margin-bottom: 30px;">
+                    (Можете дзвонити або писати повідомлення у WhatsApp чи Telegram)
+                </p>
+
+                <p style="font-size: 16px;">
+                    <strong>Електронна пошта:</strong><br>
+                    <a href="mailto:psy6409070@gmail.com" style="color: var(--color-teal); font-size: 16px;">psy6409070@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Леонід Поміркований — Психолог. Усі права захищені.</p>
+        <p>Трансформація страхів через інтегративну психологію, гіпно-коучинг та енергетичну корекцію</p>
+    </div>
+</footer>
+
+</body>
+</html>
